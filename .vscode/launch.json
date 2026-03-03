@@ -1,0 +1,27 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Server: TopdownMMO.WorldServer",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build-server",
+            "program": "${workspaceFolder}/Server/TopdownMMO.WorldServer/bin/Debug/net9.0/TopdownMMO.WorldServer.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/Server/TopdownMMO.WorldServer",
+            "console": "integratedTerminal",
+            "stopAtEntry": false
+        },
+        {
+            "name": "Server + Client",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "start-client",
+            "program": "${workspaceFolder}/Server/TopdownMMO.WorldServer/bin/Debug/net9.0/TopdownMMO.WorldServer.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/Server/TopdownMMO.WorldServer",
+            "console": "integratedTerminal",
+            "stopAtEntry": false
+        }
+    ]
+}

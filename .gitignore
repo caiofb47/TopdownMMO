@@ -1,0 +1,32 @@
+# Godot
+.godot/
+*.import
+export_presets.cfg
+
+# .NET / C#
+bin/
+obj/
+*.dll
+*.pdb
+*.exe
+*.cache
+*.user
+*.suo
+*.userprefs
+
+# NuGet
+*.nupkg
+packages/
+
+# IDE
+.vs/
+*.sln.docstates
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Godot Mono
+.mono/
+data_*/
+mono_crash.*.json

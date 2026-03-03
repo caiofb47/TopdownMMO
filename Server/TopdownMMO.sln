@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopdownMMO.Protocol", "TopdownMMO.Protocol\TopdownMMO.Protocol.csproj", "{BC6A0091-8E0B-47D1-B28E-77A80CE307F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopdownMMO.GameCore", "TopdownMMO.GameCore\TopdownMMO.GameCore.csproj", "{220A1BCC-BBCF-47F8-944A-6535A17CBCBA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopdownMMO.WorldServer", "TopdownMMO.WorldServer\TopdownMMO.WorldServer.csproj", "{B18850E2-3E6D-4B43-BA28-FDF75B5C982F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BC6A0091-8E0B-47D1-B28E-77A80CE307F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC6A0091-8E0B-47D1-B28E-77A80CE307F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC6A0091-8E0B-47D1-B28E-77A80CE307F1}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{BC6A0091-8E0B-47D1-B28E-77A80CE307F1}.Debug|x64.Build.0 = Debug|Any CPU
+		{BC6A0091-8E0B-47D1-B28E-77A80CE307F1}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{BC6A0091-8E0B-47D1-B28E-77A80CE307F1}.Debug|x86.Build.0 = Debug|Any CPU
+		{BC6A0091-8E0B-47D1-B28E-77A80CE307F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC6A0091-8E0B-47D1-B28E-77A80CE307F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC6A0091-8E0B-47D1-B28E-77A80CE307F1}.Release|x64.ActiveCfg = Release|Any CPU
+		{BC6A0091-8E0B-47D1-B28E-77A80CE307F1}.Release|x64.Build.0 = Release|Any CPU
+		{BC6A0091-8E0B-47D1-B28E-77A80CE307F1}.Release|x86.ActiveCfg = Release|Any CPU
+		{BC6A0091-8E0B-47D1-B28E-77A80CE307F1}.Release|x86.Build.0 = Release|Any CPU
+		{220A1BCC-BBCF-47F8-944A-6535A17CBCBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{220A1BCC-BBCF-47F8-944A-6535A17CBCBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{220A1BCC-BBCF-47F8-944A-6535A17CBCBA}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{220A1BCC-BBCF-47F8-944A-6535A17CBCBA}.Debug|x64.Build.0 = Debug|Any CPU
+		{220A1BCC-BBCF-47F8-944A-6535A17CBCBA}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{220A1BCC-BBCF-47F8-944A-6535A17CBCBA}.Debug|x86.Build.0 = Debug|Any CPU
+		{220A1BCC-BBCF-47F8-944A-6535A17CBCBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{220A1BCC-BBCF-47F8-944A-6535A17CBCBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{220A1BCC-BBCF-47F8-944A-6535A17CBCBA}.Release|x64.ActiveCfg = Release|Any CPU
+		{220A1BCC-BBCF-47F8-944A-6535A17CBCBA}.Release|x64.Build.0 = Release|Any CPU
+		{220A1BCC-BBCF-47F8-944A-6535A17CBCBA}.Release|x86.ActiveCfg = Release|Any CPU
+		{220A1BCC-BBCF-47F8-944A-6535A17CBCBA}.Release|x86.Build.0 = Release|Any CPU
+		{B18850E2-3E6D-4B43-BA28-FDF75B5C982F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B18850E2-3E6D-4B43-BA28-FDF75B5C982F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B18850E2-3E6D-4B43-BA28-FDF75B5C982F}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{B18850E2-3E6D-4B43-BA28-FDF75B5C982F}.Debug|x64.Build.0 = Debug|Any CPU
+		{B18850E2-3E6D-4B43-BA28-FDF75B5C982F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B18850E2-3E6D-4B43-BA28-FDF75B5C982F}.Debug|x86.Build.0 = Debug|Any CPU
+		{B18850E2-3E6D-4B43-BA28-FDF75B5C982F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B18850E2-3E6D-4B43-BA28-FDF75B5C982F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B18850E2-3E6D-4B43-BA28-FDF75B5C982F}.Release|x64.ActiveCfg = Release|Any CPU
+		{B18850E2-3E6D-4B43-BA28-FDF75B5C982F}.Release|x64.Build.0 = Release|Any CPU
+		{B18850E2-3E6D-4B43-BA28-FDF75B5C982F}.Release|x86.ActiveCfg = Release|Any CPU
+		{B18850E2-3E6D-4B43-BA28-FDF75B5C982F}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
