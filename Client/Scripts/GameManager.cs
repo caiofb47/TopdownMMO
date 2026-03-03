@@ -24,6 +24,7 @@ public partial class GameManager : Node2D
     private GameHUD _hud = null!;
     private WorldGrid _worldGrid = null!;
     private Node2D _entitiesContainer = null!;
+    private Camera2D? _camera;
 
     // ── Estado ──
     private string _localPlayerId = string.Empty;
@@ -53,6 +54,9 @@ public partial class GameManager : Node2D
 
         _network = new NetworkClient();
         AddChild(_network);
+
+        // Pega referência da Camera2D (filho da cena)
+        _camera = GetNode<Camera2D>("Camera2D");
 
         // Conecta sinais
         _network.ConnectedToServer += OnConnected;
@@ -144,6 +148,7 @@ public partial class GameManager : Node2D
         _localPlayer.SetGridPosition(res.X, res.Y);
         _entitiesContainer.AddChild(_localPlayer);
 
+        UpdateCamera(res.X, res.Y);
         _hud.SetPosition(res.X, res.Y);
     }
 
@@ -156,6 +161,7 @@ public partial class GameManager : Node2D
         {
             // Atualiza jogador local
             _localPlayer?.SetGridPosition(data.X, data.Y);
+            UpdateCamera(data.X, data.Y);
             _hud.SetPosition(data.X, data.Y);
         }
         else
@@ -201,6 +207,7 @@ public partial class GameManager : Node2D
             {
                 // Atualiza local
                 _localPlayer?.SetGridPosition(p.X, p.Y);
+                UpdateCamera(p.X, p.Y);
                 _hud.SetPosition(p.X, p.Y);
                 continue;
             }
@@ -232,6 +239,15 @@ public partial class GameManager : Node2D
     // ═══════════════════════════════════════════════
     // Helpers
     // ═══════════════════════════════════════════════
+
+    private void UpdateCamera(int gridX, int gridY)
+    {
+        if (_camera is null) return;
+        // Centraliza camera no tile do jogador
+        _camera.Position = new Vector2(
+            gridX * WorldGrid.TileSize + WorldGrid.TileSize / 2.0f,
+            gridY * WorldGrid.TileSize + WorldGrid.TileSize / 2.0f);
+    }
 
     private void CreateRemotePlayer(string id, string name, int x, int y)
     {

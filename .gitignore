@@ -30,3 +30,8 @@ Thumbs.db
 .mono/
 data_*/
 mono_crash.*.json
+
+# Extracted Tibia sprites (copyright — do not commit)
+Client/Assets/Sprites/
+Tools/SpriteExtractor/bin/
+Tools/SpriteExtractor/obj/
